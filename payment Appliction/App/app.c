@@ -91,7 +91,7 @@ void appStart(void)
 int main()
 {
 
-	ppStart();
+	AppStart();
 	
 }
 
