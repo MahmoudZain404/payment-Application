@@ -91,12 +91,8 @@ void appStart(void)
 int main()
 {
 
-	//ppStart();
-	uint32_t delay_ms = 1000;
-
-	uint32_t Num_Of_Overflowes = (uint32_t)ceil(((delay_ms * 1000) / 256));
-
-	printf("%d", Num_Of_Overflowes);
+	ppStart();
+	
 }
 
 
