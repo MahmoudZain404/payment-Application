@@ -89,16 +89,18 @@ EN_terminalError_t isCardExpired(ST_cardData_t* cardData, ST_terminalData_t* ter
 	{
 		return TERMINAL_OK;
 	}
+	else if (cardYear = curYear) 
+	{
+		if (cardMonth > curMonth)
+		{
+			return TERMINAL_OK;
+		}
+		else 
+		{
+			return EXPIRED_CARD;
+		}
+	}
 	else
-	{
-		return EXPIRED_CARD;
-	}
-	if (cardYear = curYear) 
-	if (cardMonth > curMonth)
-	{
-		return TERMINAL_OK;
-	}
-	else 
 	{
 		return EXPIRED_CARD;
 	}
@@ -323,4 +325,5 @@ void isValidCardPANTest(void)
 	//isBelowMaxAmount(&x);
 	//isValidCardPAN(&y);
 	return 0;
+
 }*/
